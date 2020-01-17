@@ -1,0 +1,24 @@
+CREATE DATABASE usuarios_bd;
+
+CREATE TABLE usuario (
+id INT NOT NULL,
+usuario VARCHAR(250) NOT NULL,
+password VARCHAR(45) NOT NULL,
+firstname VARCHAR(200) NOT NULL,
+lastname VARCHAR(200) NOT NULL,
+cedula VARCHAR(20) NOT NULL,
+contact VARCHAR(45) NOT NULL,
+perfil VARCHAR(45) NOT NULL,
+PRIMARY KEY (id));
+
+
+****Stored Procedure****
+CREATE DEFINER=`root`@`localhost` PROCEDURE `AgregarUsuario`(IN usuario varchar(250),IN password varchar(45),IN firstname varchar(200),IN lastname varchar(200),IN cedula varchar(20),IN contact varchar(45),IN perfil varchar(45))
+BEGIN
+insert into usuarios_bd.usuario (usuario,password,firstname,lastname,cedula,contact,perfil) values (usuario, password,firstname,lastname,cedula,contact,perfil);
+END
+
+
+
+
+
