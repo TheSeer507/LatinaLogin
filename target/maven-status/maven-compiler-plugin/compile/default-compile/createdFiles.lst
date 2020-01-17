@@ -1,0 +1,5 @@
+Config\Conexion.class
+Controlador\Controlador.class
+ModeloOAD\Usuario.class
+ModeloOAD\Validar.class
+ModeloOAD\PersonaOAD.class
